@@ -1,8 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
 :root {
-  font-size: 16px;
+  --color-background-green: #d9fade;
+  --color-font-black: #0f2010;
+  --color-purple: #620045;
+  --color-green: rgba(90, 191, 90, 0.25);
+  --color-gold: #ebc700;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--color-font-black);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-background-green);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/Gruener_Veltliner_Weinsberg_20060909.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+  border: none;
+  opacity: 0.15;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 300px;
+  height: auto;
+}
+
+#logo-text {
+  font-family: "Homemade Apple", cursive;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: x-large;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.pricing-card {
+  border: 1px black solid;
+  height: 200px;
 }
 
 /*
 TODO: Navbar is always at the top
 TODO: At least 1 media query
 TODO: Use flexbox
+*/
