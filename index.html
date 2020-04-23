@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Mauracher Gr&uuml;ner Veltliner</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <!-- LOGO -->
+      <img
+        src="https://cdn.pixabay.com/photo/2017/01/31/21/29/beer-2027412_960_720.png"
+        alt="logo"
+        id="header-img"
+      />
+      <span id="logo-text"> Mauracher feine Weißweine</span>
+
+      <!-- NAVBAR -->
+      <nav id="nav-bar">
+        <ul id="links">
+          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#">Vintage</a></li>
+          <li class="nav-link"><a href="#">Pricing</a></li>
+          <li class="nav-link"><a href="#">Wines</a></li>
+          <!--
+            TODO: Make this a drop down
+            TODO: Riesling, Gew&uuml;ztraminer, Silvaner, Pinot blanc
+          -->
+        </ul>
+      </nav>
+      <h1 id="title">Mauracher Gr&uuml;ner Veltliner</h1>
+    </header>
+
+    <!-- VIDEO -->
+    <section id="about">
+      About the wines
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/8I8wWoq3l7s"
+        id="video"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- FORM -->
+    <!--
+      TODO: Make sure validation works
+      TODO: Submit email to https://www.freecodecamp.com/email-submit
+    -->
+    <section id="vintages">
+      Each Vintage 2012, 2015, 2016, 2018, 2019
+    </section>
+    <form id="form">
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email."
+        minlength="5"
+        maxlength="255"
+      />
+      <button id="submit">Submit</button>
+    </form>
+    <footer>&copy;2020, PSM</footer>
+  </body>
+  <!--
+    TODO: Add sections: about, vintages, pricing boxes
+  -->
+</html>
