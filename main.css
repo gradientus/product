@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
 
 :root {
   --color-background-green: #d9fade;
@@ -37,22 +38,40 @@ body:before {
   opacity: 0.15;
 }
 
+body {
+  font-family: "BioRhyme", serif;
+}
+
 #logo {
   display: flex;
   justify-content: center;
 }
 
 img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 }
 
 #logo-text {
   font-family: "Homemade Apple", cursive;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
-  letter-spacing: 2px;
-  font-size: x-large;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+ul {
+  margin-left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  flex: 3;
+}
+
+#links {
+  list-style-type: none;
 }
 
 #video {
@@ -66,8 +85,29 @@ img {
   height: 200px;
 }
 
+input {
+  border-radius: 4px;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  background-color: green;
+  text-align: center;
+}
+
+footer {
+  color: gray;
+  font-size: small;
+  margin-top: 1.5rem;
+  text-align: center;
+}
 /*
 TODO: Navbar is always at the top
-TODO: At least 1 media query
-TODO: Use flexbox
 */
+
+@media (min-width: 760px) {
+  #logo-text {
+    font-size: 3rem;
+  }
+}
