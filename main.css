@@ -38,8 +38,31 @@ body:before {
   opacity: 0.15;
 }
 
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#header {
+  position: sticky;
+  background-color: var(--color-background-green);
+  z-index: 5;
+  top: 0;
+  margin: 0 0.5rem;
+}
+
 body {
   font-family: "BioRhyme", serif;
+}
+
+main {
+  margin: 0 0.6rem;
 }
 
 #logo {
@@ -48,26 +71,16 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
 #logo-text {
-  font-family: "Homemade Apple", cursive;
   font-weight: bolder;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 1.6rem;
-}
-
-ul {
-  margin-left: 0px;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  flex: 3;
+  font-size: 1.5rem;
 }
 
 #links {
@@ -75,9 +88,9 @@ li {
 }
 
 #video {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
-  text-align: center;
 }
 
 .pricing-card {
