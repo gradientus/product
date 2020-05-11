@@ -67,7 +67,7 @@ h4 {
   position: -webkit-sticky;
   position: sticky;
   background-color: var(--color-background-green);
-  z-index: 5;
+  z-index: 2;
   top: 0px;
   margin: 0 0.12rem;
 }
@@ -78,6 +78,10 @@ body {
 
 main {
   margin: 0 0.6rem;
+}
+
+section {
+  margin-top: 5rem;
 }
 
 #header-img {
@@ -105,8 +109,10 @@ img {
 
 #links {
   list-style-type: none;
-  text-align: center;
   letter-spacing: 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-link:link {
@@ -125,15 +131,13 @@ img {
 }
 
 #video-container {
-  width: 100%;
-  max-width: 660px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #video {
-  width: 100%;
   max-width: 560px;
-  height: 320;
+  height: auto;
 }
 
 .pricing-card {
