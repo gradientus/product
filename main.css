@@ -2,11 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
 
 :root {
-  --color-background-green: #d9fade;
+  --color-background-green: rgb(238, 202, 1);
   --color-font-black: #0f2010;
   --color-purple: #620045;
   --color-green: rgba(90, 191, 90, 0.25);
-  --color-gold: #ebc700;
 }
 
 html {
@@ -99,6 +98,22 @@ img {
 #links {
   list-style-type: none;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+.nav-link:link {
+  text-decoration: none;
+}
+.nav-link:visited {
+  color: black;
+}
+.nav-link:hover {
+  color: green;
+  font-weight: bold;
+}
+.nav-link:active {
+  color: green;
+  font-weight: bold;
 }
 
 #video-container {
@@ -128,9 +143,9 @@ input {
 button {
   border-radius: 4px;
   border: none;
-  background-color: rgb(3, 187, 3);
-  color: white;
+  background-color: var(--color-background-green);
   text-align: center;
+  font-weight: bold;
   padding: 0.25rem;
   margin: 0.25rem;
 }
