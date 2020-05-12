@@ -174,9 +174,63 @@ button {
   width: 100%;
 }
 
+.cart:hover {
+  background-color: var(--color-purple);
+}
+
+.cart:active {
+  background-color: var(--color-purple);
+}
+
 footer {
   color: gray;
   font-size: small;
   margin-top: 1.5rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  #pairing {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  #pairing-title {
+    margin-top: 0;
+  }
+
+  #gruner-pairing {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.66rem;
+  }
+  h4 {
+    font-size: 1.125;
+  }
+
+  #pricing-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pricing-card {
+    max-width: 333px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cart {
+    align-self: flex-end;
+  }
 }
